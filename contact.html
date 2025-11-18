@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Ishmael Harry-Deckor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <span class="nav__logo-gradient">Ishmael</span> Harry-Deckor
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#leadership" class="nav__link">Leadership</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="education.html" class="nav__link">Education</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link active-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h1 class="section__title section__title-center">Get In Touch</h1>
+            <div class="contact__container grid">
+                <!-- Contact Information -->
+                <div class="contact__info">
+                    <h2 class="contact__title">Contact Information</h2>
+                    <p class="contact__description">
+                        Feel free to reach out for collaborations, opportunities, or just to connect. 
+                        I'm always open to discussing innovative projects and community initiatives.
+                    </p>
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <div class="contact__icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact__content">
+                                <h3 class="contact__label">Address</h3>
+                                <p class="contact__text">Amasaman, Greater Accra Region<br>Ghana</p>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <div class="contact__icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact__content">
+                                <h3 class="contact__label">Phone</h3>
+                                <a href="tel:+233555908380" class="contact__link" id="phone-link">+233 555 908 380</a>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <div class="contact__icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact__content">
+                                <h3 class="contact__label">Email</h3>
+                                <a href="mailto:ishmaelharrydeckor@gmail.com" class="contact__link" id="email-link">ishmaelharrydeckor@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <div class="contact__icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact__content">
+                                <h3 class="contact__label">Working Hours</h3>
+                                <p class="contact__text">Monday - Friday: 9:00 AM - 5:00 PM<br>Weekend: Available for urgent matters</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__social">
+                        <a href="https://www.linkedin.com/in/ishmaelharrydeckor" target="_blank" rel="noopener noreferrer" class="contact__social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://wa.me/233555908380" target="_blank" rel="noopener noreferrer" class="contact__social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact__form-container">
+                    <form class="contact__form" id="contact-form">
+                        <div class="contact__form-group grid">
+                            <div class="contact__form-field">
+                                <label for="name" class="contact__form-label">Name</label>
+                                <input type="text" id="name" name="name" class="contact__form-input" placeholder="Your Name" required>
+                            </div>
+                            <div class="contact__form-field">
+                                <label for="phone" class="contact__form-label">Phone</label>
+                                <input type="tel" id="phone" name="phone" class="contact__form-input" placeholder="Your Phone Number" required>
+                            </div>
+                        </div>
+                        <div class="contact__form-field">
+                            <label for="email" class="contact__form-label">Email</label>
+                            <input type="email" id="email" name="email" class="contact__form-input" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="contact__form-field">
+                            <label for="message" class="contact__form-label">Message</label>
+                            <textarea id="message" name="message" class="contact__form-textarea" rows="6" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="contact__form-buttons">
+                            <button type="submit" class="button button--flex">
+                                Send Message <i class="fas fa-paper-plane button__icon"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="contact__shapes">
+            <div class="contact__shape contact__shape-1"></div>
+            <div class="contact__shape contact__shape-2"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">Ishmael Harry-Deckor</h3>
+                    <p class="footer__description">Engineering Student & Innovation Leader</p>
+                </div>
+                <div class="footer__links">
+                    <ul class="footer__list">
+                        <li><a href="index.html" class="footer__link">Home</a></li>
+                        <li><a href="index.html#about" class="footer__link">About</a></li>
+                        <li><a href="index.html#projects" class="footer__link">Projects</a></li>
+                        <li><a href="contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/in/ishmaelharrydeckor" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://wa.me/233555908380" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">&#169; 2025 Ishmael Harry-Deckor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
